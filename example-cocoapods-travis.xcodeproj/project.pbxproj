@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47541A01C11B7B136A7D565D /* Pods_example_cocoapods_travis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB4285A9D98DCCA77EBFAEA /* Pods_example_cocoapods_travis.framework */; };
 		6286CDD71F5493070012BD0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286CDD61F5493070012BD0A /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0429E20C186A63FC54D7F8F7 /* Pods-example-cocoapods-travis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.debug.xcconfig"; sourceTree = "<group>"; };
+		5546511C1B228D590D047613 /* Pods-example-cocoapods-travis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.release.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.release.xcconfig"; sourceTree = "<group>"; };
 		6286CDD31F5493070012BD0A /* example-cocoapods-travis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "example-cocoapods-travis"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6286CDD61F5493070012BD0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AFB4285A9D98DCCA77EBFAEA /* Pods_example_cocoapods_travis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example_cocoapods_travis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47541A01C11B7B136A7D565D /* Pods_example_cocoapods_travis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		446D38706350A301ABA295BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0429E20C186A63FC54D7F8F7 /* Pods-example-cocoapods-travis.debug.xcconfig */,
+				5546511C1B228D590D047613 /* Pods-example-cocoapods-travis.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6286CDCA1F5493070012BD0A = {
 			isa = PBXGroup;
 			children = (
 				6286CDD51F5493070012BD0A /* example-cocoapods-travis */,
 				6286CDD41F5493070012BD0A /* Products */,
+				446D38706350A301ABA295BA /* Pods */,
+				B6111418F2CF728DC77000A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +78,14 @@
 			path = "example-cocoapods-travis";
 			sourceTree = "<group>";
 		};
+		B6111418F2CF728DC77000A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFB4285A9D98DCCA77EBFAEA /* Pods_example_cocoapods_travis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -69,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6286CDDA1F5493070012BD0A /* Build configuration list for PBXNativeTarget "example-cocoapods-travis" */;
 			buildPhases = (
+				3A36314D12841A053BC10341 /* [CP] Check Pods Manifest.lock */,
 				6286CDCF1F5493070012BD0A /* Sources */,
 				6286CDD01F5493070012BD0A /* Frameworks */,
 				6286CDD11F5493070012BD0A /* CopyFiles */,
+				129298CBC4829E351A9F6E00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -114,6 +140,42 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		129298CBC4829E351A9F6E00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A36314D12841A053BC10341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-example-cocoapods-travis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6286CDCF1F5493070012BD0A /* Sources */ = {
@@ -214,11 +276,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		6286CDDB1F5493070012BD0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0429E20C186A63FC54D7F8F7 /* Pods-example-cocoapods-travis.debug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -227,6 +291,7 @@
 		};
 		6286CDDC1F5493070012BD0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5546511C1B228D590D047613 /* Pods-example-cocoapods-travis.release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -252,6 +317,7 @@
 				6286CDDC1F5493070012BD0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
