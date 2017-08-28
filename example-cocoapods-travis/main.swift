@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Hello arguments! ", terminator: "")
 
+let arguments = CommandLine.arguments.dropFirst().joined(separator: " ");
+
+print(arguments);
