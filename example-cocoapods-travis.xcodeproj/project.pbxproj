@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47541A01C11B7B136A7D565D /* Pods_example_cocoapods_travis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB4285A9D98DCCA77EBFAEA /* Pods_example_cocoapods_travis.framework */; };
+		50718B5C216FD53A0078E8F6 /* example_cocoapods_travis_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50718B5B216FD53A0078E8F6 /* example_cocoapods_travis_test.swift */; };
 		6286CDD71F5493070012BD0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286CDD61F5493070012BD0A /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		0429E20C186A63FC54D7F8F7 /* Pods-example-cocoapods-travis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.debug.xcconfig"; sourceTree = "<group>"; };
+		50718B59216FD53A0078E8F6 /* example-cocoapods-travis-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "example-cocoapods-travis-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50718B5B216FD53A0078E8F6 /* example_cocoapods_travis_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_cocoapods_travis_test.swift; sourceTree = "<group>"; };
+		50718B5D216FD53A0078E8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5546511C1B228D590D047613 /* Pods-example-cocoapods-travis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.release.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.release.xcconfig"; sourceTree = "<group>"; };
 		6286CDD31F5493070012BD0A /* example-cocoapods-travis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "example-cocoapods-travis"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6286CDD61F5493070012BD0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -32,6 +36,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		50718B56216FD53A0078E8F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6286CDD01F5493070012BD0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +63,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		50718B5A216FD53A0078E8F6 /* example-cocoapods-travis-test */ = {
+			isa = PBXGroup;
+			children = (
+				50718B5B216FD53A0078E8F6 /* example_cocoapods_travis_test.swift */,
+				50718B5D216FD53A0078E8F6 /* Info.plist */,
+			);
+			path = "example-cocoapods-travis-test";
+			sourceTree = "<group>";
+		};
 		6286CDCA1F5493070012BD0A = {
 			isa = PBXGroup;
 			children = (
 				6286CDD51F5493070012BD0A /* example-cocoapods-travis */,
+				50718B5A216FD53A0078E8F6 /* example-cocoapods-travis-test */,
 				6286CDD41F5493070012BD0A /* Products */,
 				446D38706350A301ABA295BA /* Pods */,
 				B6111418F2CF728DC77000A5 /* Frameworks */,
@@ -66,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				6286CDD31F5493070012BD0A /* example-cocoapods-travis */,
+				50718B59216FD53A0078E8F6 /* example-cocoapods-travis-test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +111,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		50718B58216FD53A0078E8F6 /* example-cocoapods-travis-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50718B5E216FD53A0078E8F6 /* Build configuration list for PBXNativeTarget "example-cocoapods-travis-test" */;
+			buildPhases = (
+				50718B55216FD53A0078E8F6 /* Sources */,
+				50718B56216FD53A0078E8F6 /* Frameworks */,
+				50718B57216FD53A0078E8F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "example-cocoapods-travis-test";
+			productName = "example-cocoapods-travis-test";
+			productReference = 50718B59216FD53A0078E8F6 /* example-cocoapods-travis-test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6286CDD21F5493070012BD0A /* example-cocoapods-travis */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6286CDDA1F5493070012BD0A /* Build configuration list for PBXNativeTarget "example-cocoapods-travis" */;
@@ -113,10 +152,14 @@
 		6286CDCB1F5493070012BD0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Black Duck CoPilot";
 				TargetAttributes = {
+					50718B58216FD53A0078E8F6 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
 					6286CDD21F5493070012BD0A = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
@@ -136,9 +179,20 @@
 			projectRoot = "";
 			targets = (
 				6286CDD21F5493070012BD0A /* example-cocoapods-travis */,
+				50718B58216FD53A0078E8F6 /* example-cocoapods-travis-test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50718B57216FD53A0078E8F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		3A36314D12841A053BC10341 /* [CP] Check Pods Manifest.lock */ = {
@@ -162,6 +216,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		50718B55216FD53A0078E8F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50718B5C216FD53A0078E8F6 /* example_cocoapods_travis_test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6286CDCF1F5493070012BD0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +235,62 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		50718B5F216FD53A0078E8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "example-cocoapods-travis-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blackduck.copilot.example-cocoapods-travis-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		50718B60216FD53A0078E8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "example-cocoapods-travis-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blackduck.copilot.example-cocoapods-travis-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		6286CDD81F5493070012BD0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -285,6 +403,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		50718B5E216FD53A0078E8F6 /* Build configuration list for PBXNativeTarget "example-cocoapods-travis-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50718B5F216FD53A0078E8F6 /* Debug */,
+				50718B60216FD53A0078E8F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6286CDCE1F5493070012BD0A /* Build configuration list for PBXProject "example-cocoapods-travis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
