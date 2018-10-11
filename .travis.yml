@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode9.4
 xcode_project: example-cocoapods-travis.xcodeproj
-xcode_scheme: example-cocoapods-travis-test
+xcode_scheme: example-cocoapods-travis
 
 after_success:
   - bash <(curl -s https://copilot-test.blackducksoftware.com/ci/travis/scripts/upload)
