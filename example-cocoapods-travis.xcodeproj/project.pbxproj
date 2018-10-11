@@ -97,7 +97,6 @@
 				6286CDCF1F5493070012BD0A /* Sources */,
 				6286CDD01F5493070012BD0A /* Frameworks */,
 				6286CDD11F5493070012BD0A /* CopyFiles */,
-				129298CBC4829E351A9F6E00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,21 +141,6 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		129298CBC4829E351A9F6E00 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3A36314D12841A053BC10341 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
