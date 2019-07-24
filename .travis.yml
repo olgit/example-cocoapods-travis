@@ -1,7 +1,8 @@
-language: objective-c
-osx_image: xcode9.4
-xcode_project: example-cocoapods-travis.xcodeproj
+os: osx
+osx_image: xcode10.2
+language: swift
+xcode_workspace: example-cocoapods-travis.xcworkspace
 xcode_scheme: example-cocoapods-travis
 
 after_success:
-  - bash <(curl -s https://copilot-test.blackducksoftware.com/ci/travis/scripts/upload)
+  - bash <(curl -s https://copilot-valid.blackducksoftware.com/ci/travis/scripts/upload)
