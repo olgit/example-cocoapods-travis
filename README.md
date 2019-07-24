@@ -1,5 +1,5 @@
 # Black Duck CoPilot Cocoapods/Travis CI Example
-[![Travis CI](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis.svg?branch=validation)](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis) [![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/validation/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/master)
+[![Travis CI](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis.svg?branch=validation)](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis) [![Black Duck Security Risk](https://copilot-valid.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/validation/badge-risk.svg)](https://copilot-valid.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/master)
 
 Shows a working setup for using Black Duck CoPilot to analyze the risk of project dependencies
 
