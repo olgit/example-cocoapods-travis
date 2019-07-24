@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AB52B9B485D335A9B9048C6 /* libPods-example-cocoapods-travis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0983B55D0E833BD78D052C4 /* libPods-example-cocoapods-travis.a */; };
 		50D9FC8122E89BE20049AB0E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC8022E89BE20049AB0E /* main.swift */; };
 		50D9FC8E22E89C510049AB0E /* example_cocoapods_travis_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC8D22E89C510049AB0E /* example_cocoapods_travis_test.swift */; };
 		50D9FC9422E89C9C0049AB0E /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC9322E89C9C0049AB0E /* XCTestManifests.swift */; };
+		A23D8DF5734C1BC79D2873CD /* libPods-example-cocoapods-travis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F95BF742E22FF8D1BBB91D7 /* libPods-example-cocoapods-travis.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,15 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		090DB16FD0A0D544E460CBA4 /* Pods-example-cocoapods-travis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.release.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.release.xcconfig"; sourceTree = "<group>"; };
+		0F95BF742E22FF8D1BBB91D7 /* libPods-example-cocoapods-travis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-cocoapods-travis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30CBDAB1378B21B8D4D0F7D9 /* Pods-example-cocoapods-travis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.release.xcconfig"; path = "Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.release.xcconfig"; sourceTree = "<group>"; };
 		50D9FC7D22E89BE20049AB0E /* example-cocoapods-travis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "example-cocoapods-travis"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D9FC8022E89BE20049AB0E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		50D9FC8B22E89C510049AB0E /* example-cocoapods-travis-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "example-cocoapods-travis-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D9FC8D22E89C510049AB0E /* example_cocoapods_travis_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_cocoapods_travis_test.swift; sourceTree = "<group>"; };
 		50D9FC8F22E89C510049AB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D9FC9322E89C9C0049AB0E /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		B37C303DF0EB6C1EAE0679EA /* Pods-example-cocoapods-travis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.debug.xcconfig"; sourceTree = "<group>"; };
-		E0983B55D0E833BD78D052C4 /* libPods-example-cocoapods-travis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-cocoapods-travis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D700687342AB7947D2811A69 /* Pods-example-cocoapods-travis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.debug.xcconfig"; path = "Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB52B9B485D335A9B9048C6 /* libPods-example-cocoapods-travis.a in Frameworks */,
+				A23D8DF5734C1BC79D2873CD /* libPods-example-cocoapods-travis.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,14 +56,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030DDA356D5D8FBCB4DD46E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D700687342AB7947D2811A69 /* Pods-example-cocoapods-travis.debug.xcconfig */,
+				30CBDAB1378B21B8D4D0F7D9 /* Pods-example-cocoapods-travis.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		312D23C1D03A028C39CB8EC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F95BF742E22FF8D1BBB91D7 /* libPods-example-cocoapods-travis.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50D9FC7422E89BE20049AB0E = {
 			isa = PBXGroup;
 			children = (
 				50D9FC7F22E89BE20049AB0E /* example-cocoapods-travis */,
 				50D9FC8C22E89C510049AB0E /* example-cocoapods-travis-test */,
 				50D9FC7E22E89BE20049AB0E /* Products */,
-				A97F3F1B85166D110435DA28 /* Pods */,
-				52DF6153DC3AFD6EF6F9D370 /* Frameworks */,
+				030DDA356D5D8FBCB4DD46E4 /* Pods */,
+				312D23C1D03A028C39CB8EC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,23 +112,6 @@
 			path = "example-cocoapods-travis-test";
 			sourceTree = "<group>";
 		};
-		52DF6153DC3AFD6EF6F9D370 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E0983B55D0E833BD78D052C4 /* libPods-example-cocoapods-travis.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A97F3F1B85166D110435DA28 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B37C303DF0EB6C1EAE0679EA /* Pods-example-cocoapods-travis.debug.xcconfig */,
-				090DB16FD0A0D544E460CBA4 /* Pods-example-cocoapods-travis.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,7 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50D9FC8422E89BE20049AB0E /* Build configuration list for PBXNativeTarget "example-cocoapods-travis" */;
 			buildPhases = (
-				F7EAE6CEFCC38BE09EFBE753 /* [CP] Check Pods Manifest.lock */,
+				27A9AC7DA3BE0502B2D66E94 /* [CP] Check Pods Manifest.lock */,
 				50D9FC7922E89BE20049AB0E /* Sources */,
 				50D9FC7A22E89BE20049AB0E /* Frameworks */,
 				50D9FC7B22E89BE20049AB0E /* CopyFiles */,
@@ -196,16 +197,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F7EAE6CEFCC38BE09EFBE753 /* [CP] Check Pods Manifest.lock */ = {
+		27A9AC7DA3BE0502B2D66E94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-example-cocoapods-travis-checkManifestLockResult.txt",
 			);
@@ -295,6 +300,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -349,14 +355,24 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		50D9FC8522E89BE20049AB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B37C303DF0EB6C1EAE0679EA /* Pods-example-cocoapods-travis.debug.xcconfig */;
+			baseConfigurationReference = D700687342AB7947D2811A69 /* Pods-example-cocoapods-travis.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"${SCROOT}/Pods\"/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PromiseKit\"",
+					"\"${SCROOT}/Pods\"/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -364,9 +380,18 @@
 		};
 		50D9FC8622E89BE20049AB0E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 090DB16FD0A0D544E460CBA4 /* Pods-example-cocoapods-travis.release.xcconfig */;
+			baseConfigurationReference = 30CBDAB1378B21B8D4D0F7D9 /* Pods-example-cocoapods-travis.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"${SCROOT}/Pods\"/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PromiseKit\"",
+					"\"${SCROOT}/Pods\"/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -375,8 +400,16 @@
 		50D9FC9122E89C510049AB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"${SCROOT}/Pods\"/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PromiseKit\"",
+					"\"${SCROOT}/Pods\"/**",
+				);
 				INFOPLIST_FILE = "example-cocoapods-travis-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,8 +425,16 @@
 		50D9FC9222E89C510049AB0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"${SCROOT}/Pods\"/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PromiseKit\"",
+					"\"${SCROOT}/Pods\"/**",
+				);
 				INFOPLIST_FILE = "example-cocoapods-travis-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
