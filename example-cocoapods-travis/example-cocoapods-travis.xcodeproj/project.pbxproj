@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D9FC8122E89BE20049AB0E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC8022E89BE20049AB0E /* main.swift */; };
+		50D9FC8E22E89C510049AB0E /* example_cocoapods_travis_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC8D22E89C510049AB0E /* example_cocoapods_travis_test.swift */; };
+		50D9FC9422E89C9C0049AB0E /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC9322E89C9C0049AB0E /* XCTestManifests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50D9FC7B22E89BE20049AB0E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50D9FC7D22E89BE20049AB0E /* example-cocoapods-travis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "example-cocoapods-travis"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D9FC8022E89BE20049AB0E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		50D9FC8B22E89C510049AB0E /* example-cocoapods-travis-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "example-cocoapods-travis-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D9FC8D22E89C510049AB0E /* example_cocoapods_travis_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_cocoapods_travis_test.swift; sourceTree = "<group>"; };
+		50D9FC8F22E89C510049AB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D9FC9322E89C9C0049AB0E /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50D9FC7A22E89BE20049AB0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D9FC8822E89C510049AB0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D9FC7422E89BE20049AB0E = {
+			isa = PBXGroup;
+			children = (
+				50D9FC7F22E89BE20049AB0E /* example-cocoapods-travis */,
+				50D9FC8C22E89C510049AB0E /* example-cocoapods-travis-test */,
+				50D9FC7E22E89BE20049AB0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50D9FC7E22E89BE20049AB0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D9FC7D22E89BE20049AB0E /* example-cocoapods-travis */,
+				50D9FC8B22E89C510049AB0E /* example-cocoapods-travis-test.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D9FC7F22E89BE20049AB0E /* example-cocoapods-travis */ = {
+			isa = PBXGroup;
+			children = (
+				50D9FC8022E89BE20049AB0E /* main.swift */,
+			);
+			path = "example-cocoapods-travis";
+			sourceTree = "<group>";
+		};
+		50D9FC8C22E89C510049AB0E /* example-cocoapods-travis-test */ = {
+			isa = PBXGroup;
+			children = (
+				50D9FC8D22E89C510049AB0E /* example_cocoapods_travis_test.swift */,
+				50D9FC8F22E89C510049AB0E /* Info.plist */,
+				50D9FC9322E89C9C0049AB0E /* XCTestManifests.swift */,
+			);
+			path = "example-cocoapods-travis-test";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50D9FC7C22E89BE20049AB0E /* example-cocoapods-travis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D9FC8422E89BE20049AB0E /* Build configuration list for PBXNativeTarget "example-cocoapods-travis" */;
+			buildPhases = (
+				50D9FC7922E89BE20049AB0E /* Sources */,
+				50D9FC7A22E89BE20049AB0E /* Frameworks */,
+				50D9FC7B22E89BE20049AB0E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "example-cocoapods-travis";
+			productName = "example-cocoapods-travis";
+			productReference = 50D9FC7D22E89BE20049AB0E /* example-cocoapods-travis */;
+			productType = "com.apple.product-type.tool";
+		};
+		50D9FC8A22E89C510049AB0E /* example-cocoapods-travis-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D9FC9022E89C510049AB0E /* Build configuration list for PBXNativeTarget "example-cocoapods-travis-test" */;
+			buildPhases = (
+				50D9FC8722E89C510049AB0E /* Sources */,
+				50D9FC8822E89C510049AB0E /* Frameworks */,
+				50D9FC8922E89C510049AB0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "example-cocoapods-travis-test";
+			productName = "example-cocoapods-travis-test";
+			productReference = 50D9FC8B22E89C510049AB0E /* example-cocoapods-travis-test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50D9FC7522E89BE20049AB0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Black Duck Copilot";
+				TargetAttributes = {
+					50D9FC7C22E89BE20049AB0E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					50D9FC8A22E89C510049AB0E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 50D9FC7822E89BE20049AB0E /* Build configuration list for PBXProject "example-cocoapods-travis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50D9FC7422E89BE20049AB0E;
+			productRefGroup = 50D9FC7E22E89BE20049AB0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50D9FC7C22E89BE20049AB0E /* example-cocoapods-travis */,
+				50D9FC8A22E89C510049AB0E /* example-cocoapods-travis-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D9FC8922E89C510049AB0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50D9FC7922E89BE20049AB0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D9FC8122E89BE20049AB0E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D9FC8722E89C510049AB0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D9FC8E22E89C510049AB0E /* example_cocoapods_travis_test.swift in Sources */,
+				50D9FC9422E89C9C0049AB0E /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50D9FC8222E89BE20049AB0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50D9FC8322E89BE20049AB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		50D9FC8522E89BE20049AB0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		50D9FC8622E89BE20049AB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		50D9FC9122E89C510049AB0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "example-cocoapods-travis-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synopsys.copilot.example-cocoapods-travis-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		50D9FC9222E89C510049AB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "example-cocoapods-travis-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synopsys.copilot.example-cocoapods-travis-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50D9FC7822E89BE20049AB0E /* Build configuration list for PBXProject "example-cocoapods-travis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D9FC8222E89BE20049AB0E /* Debug */,
+				50D9FC8322E89BE20049AB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D9FC8422E89BE20049AB0E /* Build configuration list for PBXNativeTarget "example-cocoapods-travis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D9FC8522E89BE20049AB0E /* Debug */,
+				50D9FC8622E89BE20049AB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D9FC9022E89C510049AB0E /* Build configuration list for PBXNativeTarget "example-cocoapods-travis-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D9FC9122E89C510049AB0E /* Debug */,
+				50D9FC9222E89C510049AB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50D9FC7522E89BE20049AB0E /* Project object */;
+}
