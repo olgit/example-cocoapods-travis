@@ -3,3 +3,6 @@ osx_image: xcode10.2
 language: swift
 xcode_project: example-cocoapods-travis.xcodeproj
 xcode_scheme: example-cocoapods-travis
+
+after_success:
+  - bash <(curl -s https://copilot-valid.blackducksoftware.com/ci/travis/scripts/upload)

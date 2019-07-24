@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AB52B9B485D335A9B9048C6 /* libPods-example-cocoapods-travis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0983B55D0E833BD78D052C4 /* libPods-example-cocoapods-travis.a */; };
 		50D9FC8122E89BE20049AB0E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC8022E89BE20049AB0E /* main.swift */; };
 		50D9FC8E22E89C510049AB0E /* example_cocoapods_travis_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC8D22E89C510049AB0E /* example_cocoapods_travis_test.swift */; };
 		50D9FC9422E89C9C0049AB0E /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9FC9322E89C9C0049AB0E /* XCTestManifests.swift */; };
@@ -25,12 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		090DB16FD0A0D544E460CBA4 /* Pods-example-cocoapods-travis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.release.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.release.xcconfig"; sourceTree = "<group>"; };
 		50D9FC7D22E89BE20049AB0E /* example-cocoapods-travis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "example-cocoapods-travis"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D9FC8022E89BE20049AB0E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		50D9FC8B22E89C510049AB0E /* example-cocoapods-travis-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "example-cocoapods-travis-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D9FC8D22E89C510049AB0E /* example_cocoapods_travis_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example_cocoapods_travis_test.swift; sourceTree = "<group>"; };
 		50D9FC8F22E89C510049AB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D9FC9322E89C9C0049AB0E /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		B37C303DF0EB6C1EAE0679EA /* Pods-example-cocoapods-travis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-cocoapods-travis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example-cocoapods-travis/Pods-example-cocoapods-travis.debug.xcconfig"; sourceTree = "<group>"; };
+		E0983B55D0E833BD78D052C4 /* libPods-example-cocoapods-travis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-cocoapods-travis.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB52B9B485D335A9B9048C6 /* libPods-example-cocoapods-travis.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +62,8 @@
 				50D9FC7F22E89BE20049AB0E /* example-cocoapods-travis */,
 				50D9FC8C22E89C510049AB0E /* example-cocoapods-travis-test */,
 				50D9FC7E22E89BE20049AB0E /* Products */,
+				A97F3F1B85166D110435DA28 /* Pods */,
+				52DF6153DC3AFD6EF6F9D370 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +94,23 @@
 			path = "example-cocoapods-travis-test";
 			sourceTree = "<group>";
 		};
+		52DF6153DC3AFD6EF6F9D370 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0983B55D0E833BD78D052C4 /* libPods-example-cocoapods-travis.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A97F3F1B85166D110435DA28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B37C303DF0EB6C1EAE0679EA /* Pods-example-cocoapods-travis.debug.xcconfig */,
+				090DB16FD0A0D544E460CBA4 /* Pods-example-cocoapods-travis.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +118,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50D9FC8422E89BE20049AB0E /* Build configuration list for PBXNativeTarget "example-cocoapods-travis" */;
 			buildPhases = (
+				F7EAE6CEFCC38BE09EFBE753 /* [CP] Check Pods Manifest.lock */,
 				50D9FC7922E89BE20049AB0E /* Sources */,
 				50D9FC7A22E89BE20049AB0E /* Frameworks */,
 				50D9FC7B22E89BE20049AB0E /* CopyFiles */,
@@ -169,6 +194,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7EAE6CEFCC38BE09EFBE753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-example-cocoapods-travis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50D9FC7922E89BE20049AB0E /* Sources */ = {
@@ -308,6 +354,7 @@
 		};
 		50D9FC8522E89BE20049AB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B37C303DF0EB6C1EAE0679EA /* Pods-example-cocoapods-travis.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -317,6 +364,7 @@
 		};
 		50D9FC8622E89BE20049AB0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090DB16FD0A0D544E460CBA4 /* Pods-example-cocoapods-travis.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
