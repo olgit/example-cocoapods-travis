@@ -1,5 +1,12 @@
 # Black Duck CoPilot Cocoapods/Travis CI Example
-[![Travis CI](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis.svg?branch=test)](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis) [![Black Duck Security Risk](https://test.duckbuild.io/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/test/badge-risk.svg)](https://test.duckbuild.io/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/test)
+[![Travis CI](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis.svg?branch=validation)](https://travis-ci.org/BlackDuckCoPilot/example-cocoapods-travis) [![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/validation/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/BlackDuckCoPilot/example-cocoapods-travis/branches/master)
 
-This branch shows a working setup for Black Duck CoPilot's test server.
-An example for public use can be found [here](https://github.com/BlackDuckCoPilot/example-cocoapods-travis).
+Shows a working setup for using Black Duck CoPilot to analyze the risk of project dependencies
+
+## Travis CI setup
+The `.travis.yml` script has been modified to upload generated dependency data to Black Duck CoPilot:
+```yaml
+after_success:
+  - bash <(curl -s https://copilot-valid.blackducksoftware.com/ci/travis/scripts/upload)
+```
+
