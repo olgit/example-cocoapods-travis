@@ -5,5 +5,5 @@ xcode_workspace: example-cocoapods-travis.xcworkspace
 xcode_scheme: example-cocoapods-travis
 
 after_success:
-  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
+  - bash <(curl -s https://copilot-test.blackducksoftware.com/ci/travis/scripts/upload)
 
